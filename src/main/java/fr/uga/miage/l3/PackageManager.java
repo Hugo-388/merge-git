@@ -15,7 +15,7 @@ public class PackageManager {
     );
 
     private Map<String, String> devDependencies = Map.of(
-            "typescript", "~5.8.0"
+            "typescript", "~5.8.0",
             "eslint", "^9.0.0",
             "prettier", "^3.2.0"
     );
