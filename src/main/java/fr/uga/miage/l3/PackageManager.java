@@ -7,17 +7,16 @@ import java.util.Map;
 @Getter
 public class PackageManager {
 
-    private String name = "experimental-app";
-    private String version = "alpha-0.2";
-    private boolean isPrivate = false;
+    private final String name = "small-app";
+    private final String version = "0.0.5";
+    private final boolean isPrivate = true;
 
-    private Map<String, String> dependencies = Map.of(
-            "@angular/forms", "^20.5.0",
-            "rxjs", "~8.0.0-alpha"
-    );
-    private Map<String, String> devDependencies = Map.of(
-            "typescript", "~6.0.0-beta"
+    private final Map<String, String> dependencies = Map.of(
+            "zone.js", "~0.15.2"
     );
 
+    private final Map<String, String> devDependencies = Map.of(
+            "@angular/build", "^20.3.0"
+    );
 }
 
